@@ -1,0 +1,23 @@
+# Dependency & Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel deployment cache
+.vercel/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Operating System & Editors
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+.idea/
+.vscode/
+*.swp
