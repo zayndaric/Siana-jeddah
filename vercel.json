@@ -2,20 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/refrigerators",
-      "destination": "/refrigerators.html"
-    },
-    {
-      "source": "/washing-machines",
-      "destination": "/washing-machines.html"
-    },
-    {
-      "source": "/contact",
-      "destination": "/contact.html"
-    }
-  ],
   "headers": [
     {
       "source": "/assets/(.*)",
