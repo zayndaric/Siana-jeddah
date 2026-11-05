@@ -126,11 +126,90 @@
       }
     })();
   </script>
+
+  <style>
+    /* Premium Typography & Glassmorphism Enhancements */
+    body {
+      font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 500;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-weight: 800 !important;
+      letter-spacing: -0.02em;
+    }
+    p, span, a, label, input, button {
+      font-weight: 600;
+    }
+    
+    /* Ultra-Glassy Transparent Animated Navbar */
+    .glass-navbar {
+      background: rgba(255, 255, 255, 0.68) !important;
+      backdrop-filter: blur(20px) saturate(180%) !important;
+      -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+      box-shadow: 0 10px 35px -10px rgba(16, 27, 93, 0.08) !important;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    .glass-navbar:hover {
+      background: rgba(255, 255, 255, 0.85) !important;
+      box-shadow: 0 12px 40px -10px rgba(2, 132, 199, 0.12) !important;
+    }
+    .glass-pill {
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      transition: all 0.3s ease;
+    }
+    .glass-pill:hover {
+      background: rgba(255, 255, 255, 0.9);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(2, 132, 199, 0.15);
+    }
+
+    /* Clear View Hero Glass Card (Never blocks image) */
+    .hero-clear-card {
+      background: rgba(11, 19, 62, 0.38) !important;
+      backdrop-filter: blur(14px) saturate(160%) !important;
+      -webkit-backdrop-filter: blur(14px) saturate(160%) !important;
+      border: 1px solid rgba(255, 255, 255, 0.28) !important;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35) !important;
+    }
+
+    /* Automated Shimmer & Pulse Animations */
+    @keyframes glassShimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    .shimmer-badge {
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+      background-size: 200% 100%;
+      animation: glassShimmer 4s infinite linear;
+    }
+
+    @keyframes floatSmooth {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .animate-float-smooth {
+      animation: floatSmooth 4s ease-in-out infinite;
+    }
+
+    /* Automated Ticker Pulse */
+    @keyframes liveDot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.5; }
+    }
+    .live-dot {
+      animation: liveDot 1.8s ease-in-out infinite;
+    }
+  </style>
+
 </head>
 <body class="bg-white text-slate-800 antialiased selection:bg-sky-100 selection:text-[#101B5D] min-h-screen">
 
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-sky-100 shadow-[0_4px_25px_rgba(16,27,93,0.06)]">
+<header class="fixed top-0 left-0 right-0 z-50 glass-navbar">
   <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-4">
     <!-- Brand Logo -->
     <div class="flex items-center gap-6">
@@ -223,56 +302,55 @@
   <!-- Panoramic Header Banner with Animations -->
   <section class="relative w-full overflow-hidden bg-gradient-to-b from-sky-50 via-white to-sky-50/20 pt-6 pb-12 border-b border-sky-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-      <!-- Panoramic Image Card -->
-      <div class="relative w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl border border-sky-100 mb-8 group bg-slate-100">
-        <!-- Desktop & Laptop View -->
-        <div class="hidden md:block relative w-full aspect-[21/9] lg:aspect-[2.4/1] min-h-[360px] max-h-[500px] overflow-hidden">
-          <img src="assets/images/washing-machine-pcb-repair.jpg" alt="صيانة غسالات اتوماتيك جدة - فحص وبرمجة الكارتات" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000 ease-out">
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/25"></div>
-          <div class="absolute inset-0 bg-gradient-to-r from-slate-950/75 via-slate-950/30 to-transparent"></div>
-        </div>
+      <!-- Panoramic Image Card: 100% CLEAR VIEW OF LUXURY WASHING MACHINE -->
+      <div class="relative w-full rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(16,27,93,0.15)] border-2 border-white ring-1 ring-sky-200 mb-8 group bg-slate-900">
+        
+        <!-- Washing Machine Image Container: Full Clarity, No Dark Box Covering It -->
+        <div class="relative w-full aspect-[16/10] sm:aspect-[16/9] md:aspect-[21/9] lg:aspect-[2.3/1] min-h-[360px] sm:min-h-[420px] md:min-h-[460px] overflow-hidden">
+          <img src="assets/images/header-washing-machines-luxury.jpg" alt="صيانة غسالات اتوماتيك في جدة - غسالة سامسونج الفاخرة مع إطلالة مدينة جدة" class="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-1000 ease-out">
+          
+          <!-- Ultra-Subtle Vignette (Leaves the washing machine & skyline 100% clear and bright) -->
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-black/15 pointer-events-none"></div>
 
-        <!-- Mobile View (100% Uncropped & Visible) -->
-        <div class="block md:hidden">
-          <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-900 border-b border-sky-900/50">
-            <img src="assets/images/washing-machine-pcb-repair.jpg" alt="فني صيانة غسالات اتوماتيك جدة" class="w-full h-full object-cover object-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-black/20"></div>
-            <div class="absolute top-3 right-3 left-3 flex items-center justify-between">
-              <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 text-[#101B5D] text-[11px] font-bold shadow-md">
-                <span class="h-2 w-2 rounded-full bg-[#16A34A] animate-pulse"></span>
-                <span>فحص إلكتروني فوري بالمنزل</span>
+          <!-- Top Status Tag -->
+          <div class="absolute top-4 sm:top-6 right-4 sm:right-6 left-4 sm:left-6 flex items-center justify-between gap-3 pointer-events-auto">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full hero-clear-card text-white text-xs sm:text-sm font-bold shadow-lg animate-float-smooth">
+              <span class="h-2.5 w-2.5 rounded-full bg-[#16A34A] live-dot"></span>
+              <span>المركز المعتمد لصيانة الغسالات الأتوماتيكية بجدة</span>
+              <span class="text-white/40">|</span>
+              <span class="text-[#38BDF8]">كشف منزلي فوري</span>
+            </div>
+            <div class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full hero-clear-card text-white text-xs font-bold">
+              <span>طوارئ 24/7</span>
+            </div>
+          </div>
+
+          <!-- Bottom Sleek Frosted Glass Floating Dock: Leaves the Washer & Skyline COMPLETELY OPEN -->
+          <div class="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 left-4 sm:left-6 z-10 pointer-events-auto">
+            <div class="hero-clear-card p-4 sm:p-6 rounded-2xl max-w-xl text-right space-y-3">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#0284C7]/40 border border-[#38BDF8]/50 text-[#38BDF8] text-xs font-extrabold uppercase">
+                <span class="material-symbols-outlined text-sm">local_laundry_service</span>
+                <span>تصليح فوري للأعطال بالمنزل مع قطع غيار أصلية 100%</span>
               </div>
-              <div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#101B5D]/90 text-white text-[11px] font-bold">
-                <span>طوارئ 24/7</span>
+              <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-white leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+                صيانة <span class="text-transparent bg-clip-text bg-gradient-to-l from-[#38BDF8] via-[#60A5FA] to-white">غسالات اتوماتيك</span> في جدة
+              </h1>
+              <p class="text-slate-100 text-xs sm:text-sm md:text-base font-semibold leading-relaxed drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]">
+                فحص وصيانة الغسالات ذات الفتحة الأمامية والعلوية (سامسونج، إل جي، دايو، بوش، بيكو، توشيبا) وحل مشاكل الصرف والعصر والاهتزاز فوراً بالمنزل.
+              </p>
+              <div class="flex flex-wrap items-center gap-3 pt-1">
+                <a href="https://wa.me/966552017263?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D9%84%D8%AF%D9%8A%20%D8%B9%D8%B7%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%BA%D8%B3%D8%A7%D9%84%D8%A9%20%D8%A7%D9%84%D8%A3%D9%88%D8%AA%D9%88%D9%85%D8%A7%D8%AA%D9%8A%D9%83%D9%8A%D8%A9" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-[#16A34A] to-[#22C55E] text-white font-extrabold text-xs sm:text-sm shadow-md hover:scale-105 transition-all">
+                  <span class="material-symbols-outlined text-lg">chat</span>
+                  <span>احجز عبر واتساب فوراً</span>
+                </a>
+                <a href="tel:+966552017263" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/95 text-[#101B5D] hover:bg-white font-black text-xs sm:text-sm shadow-md hover:scale-105 transition-all">
+                  <span class="material-symbols-outlined text-[#0284C7] text-lg">call</span>
+                  <span dir="ltr">+966 55 201 7263</span>
+                </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="absolute inset-0 p-5 sm:p-8 flex flex-col justify-between text-right z-10">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#101B5D] text-xs font-bold self-start border border-white shadow-md animate-float">
-            <span class="w-2.5 h-2.5 rounded-full bg-[#16A34A] animate-ping"></span>
-            <span>فريق فنيين معتمد للغسالات الأوتوماتيكية • استجابة بنفس اليوم</span>
-          </div>
-
-          <div class="max-w-xl bg-slate-950/70 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-white/20 shadow-2xl space-y-3">
-            <h1 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
-              صيانة الغسالات الأوتوماتيكية في جدة
-            </h1>
-            <p class="text-slate-200 text-xs sm:text-sm leading-relaxed">
-              إصلاح فوري في المنزل لكافة أعطال الطرد، العصر، الاهتزاز الشديد، وتبديل القطع الأصلية لجميع الماركات العالمية.
-            </p>
-            <div class="flex flex-wrap items-center gap-3 pt-1">
-              <a href="https://wa.me/966552017263?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D8%BA%D8%B3%D8%A7%D9%84%D8%A9%20%D8%A3%D9%88%D8%AA%D9%88%D9%85%D8%A7%D8%AA%D9%8A%D9%83%20%D8%A8%D8%AC%D8%AF%D8%A9" target="_blank" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#16A34A] to-[#22C55E] text-white font-bold text-xs sm:text-sm shadow-md hover:brightness-105 transition-all btn-hover-effect flex items-center gap-2">
-                <span class="material-symbols-outlined text-lg">chat</span>
-                <span>حجز فحص غسالة فوري (واتساب)</span>
-              </a>
-              <a href="tel:+966552017263" class="px-5 py-2.5 rounded-xl bg-white/95 text-[#101B5D] font-bold text-xs sm:text-sm shadow border border-white hover:bg-white transition-all btn-hover-effect flex items-center gap-2">
-                <span class="material-symbols-outlined text-[#0284C7] text-lg">call</span>
-                <span dir="ltr">+966 55 201 7263</span>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
